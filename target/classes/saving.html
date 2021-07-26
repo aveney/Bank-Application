@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saving</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+      <nav class="nav-bar">
+        <div class="container">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="saving.html">Saving</a></li>
+            <li><a href="checking.html">Checking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <section class="main-bar">
+          <div>
+            <h2>Saving</h2>
+            <ul class="list-group" id="expenses"></ul>
+          </div>
+        </section>
+
+      </div>
+      <div class="container">
+        <section class="side-bar">
+          <div>
+            <h2>Deposit/Withdrawal</h2>
+            <form class="new-expense">
+              <label for="description" class="form-label">Description</label>
+              <input type="text" class="form-control" id="description">
+              <label for="amount" class="form-label">Amount</label>
+              <input type="number" step="0.01" class="form-control" id="amount">
+              <label for="date" class="form-label">Date</label>
+              <input type="date" class="form-control" id="date">
+              <input type="submit" onclick="createNewSaving(event)">
+            </form>
+          </div>
+        </section>
+
+
+
+      </div>
+      <footer class="main-footer">
+        <p>Copyright &copy; 2021 My Website</p>
+      </footer>
+</body>
+</html>

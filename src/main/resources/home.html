@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+      <nav class="nav-bar">
+        <div class="container">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="saving.html">Saving</a></li>
+            <li><a href="checking.html">Checking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <section class="main-bar">
+          <div>
+              <h2>Accounts<button onclick="createNewSaving(event)">Get account balance</button></h2>
+            <h2>Saving<button onclick="createNewSaving(event)">Get savings balance</button></h2>
+            <h2>Checking<button onclick="createNewSaving(event)">Get checking balance</button></h2>
+          </div>
+            <div>
+                <h2>New Customer</h2>
+                <form class="new-customer">
+                    <label for="name" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="name">
+                    <label for="transaction-amount" class="form-label">Transaction Amount</label>
+                    <input type="number" step="0.01" class="form-control" id="transaction-amount">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="date">
+                    <input type="submit" onclick="createNewCustomer(event)">
+                </form>
+            </div>
+        </section>
+
+      </div>
+
+      <footer class="main-footer">
+        <p>Copyright &copy; 2021 My Website</p>
+      </footer>
+</body>
+</html>

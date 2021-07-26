@@ -1,0 +1,87 @@
+body{
+    background-color: white;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6em;
+    margin:0;
+}
+.container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+.nav-bar ul{
+    padding: 0;
+    list-style:none;
+}
+.nav-bar li{
+    display: inline;
+    padding-right: 15px;
+    font-size: 18px;
+}
+.nav-bar {
+    background-color: black;
+    color: white;
+}
+
+.main-title{
+    background-color: maroon;
+    color: lightyellow;
+}
+a   {
+    color: whitesmoke;
+    text-decoration: none;
+}
+a:hover{
+    color: whitesmoke;
+    background-color: maroon;
+    padding:10px;
+}
+.main-bar{
+    float: left;
+    width: 60%;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+.side-bar{
+    float: right;
+    width: 40%;
+    background-color: dimgray;
+    color:whitesmoke;
+    padding:10px;
+    box-sizing: border-box;
+}
+.main-footer{
+    background-color: maroon;
+    color: whitesmoke;
+    text-align: center;
+    padding:20px;
+}
+.two-col{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+    margin: 5%;
+}
+
+.new-expense{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    row-gap: 10px;
+}
+
+.expense {
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+}
+@media(max-width:600px){
+    .main-bar{
+        width: 100%;
+        float: none;
+    }
+    .side-bar{
+        width: 100%;
+        float: none;
+    }
+}
